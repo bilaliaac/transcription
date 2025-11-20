@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 189 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 189 85% 38%;
+
+    --secondary: 210 15% 92%;
+    --secondary-foreground: 215 25% 15%;
+    --secondary-hover: 210 15% 85%;
+
+    --muted: 210 15% 94%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 189 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 92%;
+    --ring: 189 85% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 210 20% 96%;
+    --sidebar-foreground: 215 25% 20%;
+    --sidebar-primary: 189 85% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 15% 90%;
+    --sidebar-accent-foreground: 215 25% 20%;
+    --sidebar-border: 214 20% 88%;
+    --sidebar-ring: 189 85% 45%;
+
+    /* Speaker colors for transcript */
+    --speaker-1: 189 85% 45%;
+    --speaker-2: 271 81% 56%;
+    --speaker-3: 142 71% 45%;
+    --speaker-4: 38 92% 50%;
+    --speaker-5: 348 83% 47%;
+    --speaker-6: 24 95% 53%;
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+  }
+
+  .dark {
+    --background: 215 28% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 215 25% 11%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 215 25% 11%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 189 80% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 189 80% 58%;
+
+    --secondary: 215 20% 16%;
+    --secondary-foreground: 210 20% 95%;
+    --secondary-hover: 215 20% 20%;
+
+    --muted: 215 20% 14%;
+    --muted-foreground: 215 10% 60%;
+
+    --accent: 189 70% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 71% 50%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 20%;
+    --input: 215 20% 16%;
+    --ring: 189 80% 50%;
+
+    --sidebar-background: 215 28% 10%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 189 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 20% 16%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 215 20% 20%;
+    --sidebar-ring: 189 80% 50%;
+
+    /* Speaker colors for dark mode */
+    --speaker-1: 189 80% 60%;
+    --speaker-2: 271 75% 65%;
+    --speaker-3: 142 65% 55%;
+    --speaker-4: 38 90% 60%;
+    --speaker-5: 348 80% 60%;
+    --speaker-6: 24 90% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
